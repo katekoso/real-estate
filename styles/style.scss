@@ -1,0 +1,12 @@
+$color_red: #9c1911;
+$color_grey_dark: #2e2e2e;
+$color_grey_light: #f3f2f2;
+$color_grey_medium: #414141;
+
+.header {
+  background-color: $color_red;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}

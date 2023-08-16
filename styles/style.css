@@ -1,3 +1,7 @@
-
+.header {
+  background-color: #9c1911; }
+  .header .nav {
+    display: flex;
+    justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */
