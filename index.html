@@ -17,13 +17,13 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="header__nav">
         <ul>
-          <li>Обо мне</li>
-          <li>Услуги</li>
-          <li>Отзывы</li>
-          <li>Цены</li>
-          <li>Контакты</li>
+          <li><a href="#">обо мне</a></li>
+          <li><a href="#">услуги</a></li>
+          <li><a href="#">отзывы</a></li>
+          <li><a href="#">цены</a></li>
+          <li><a href="#">контакты</a></li>
         </ul>
         <section class="nav__phone">
           <object
@@ -34,6 +34,24 @@
         </section>
       </nav>
     </header>
+    <main class="main">
+      <section class="welcome">
+        <div class="img-container">
+          <img
+            src="./assets/images/welcome-img.jpg"
+            alt="Фото квартиры"
+            class="welcome__img"
+          />
+        </div>
+        <section class="welcome__slogan">
+          <h1>быстро продать квартиру</h1>
+          <p>В Москве.</p>
+          <p>По лучшей цене.</p>
+          <p>С ипотекой, долгами, обремениями.</p>
+        </section>
+        <button class="welcome__btn" type="button">хочу узнать!</button>
+      </section>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>

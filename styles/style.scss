@@ -2,11 +2,60 @@ $color_red: #9c1911;
 $color_grey_dark: #2e2e2e;
 $color_grey_light: #f3f2f2;
 $color_grey_medium: #414141;
+$color__white: rgb(241, 241, 241);
 
-.header {
-  background-color: $color_red;
-  .nav {
-    display: flex;
-    justify-content: space-between;
+%middle_text_style {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-variant: small-caps;
+}
+
+body {
+  font-size: 24px;
+  .header {
+    background-color: $color_red;
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 50vw;
+        a {
+          color: $color__white;
+          text-decoration: none;
+          @extend %middle_text_style;
+          font-size: 1.5rem;
+        }
+      }
+      .nav__phone {
+        margin-right: 2vw;
+        object {
+          width: 1rem;
+        }
+        a {
+          color: $color__white;
+          text-decoration: none;
+          @extend %middle_text_style;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .welcome {
+    background-image: url(../assets/images/bg-welcome.jpg);
+    background-size: cover;
+    height: 90vh;
+    .img-container {
+      width: 60%;
+      position: relative;
+      left: 35%;
+      img {
+        width: 100%;
+      }
+    }
   }
 }

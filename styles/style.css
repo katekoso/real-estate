@@ -1,7 +1,53 @@
-.header {
-  background-color: #9c1911; }
-  .header .nav {
-    display: flex;
-    justify-content: space-between; }
+body .header__nav .nav__phone a, body .header__nav ul a {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-variant: small-caps;
+}
 
-/*# sourceMappingURL=style.css.map */
+body {
+  font-size: 24px;
+}
+body .header {
+  background-color: #9c1911;
+}
+body .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header__nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 50vw;
+}
+body .header__nav ul a {
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+body .header__nav .nav__phone {
+  margin-right: 2vw;
+}
+body .header__nav .nav__phone object {
+  width: 1rem;
+}
+body .header__nav .nav__phone a {
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+body .welcome {
+  background-image: url(../assets/images/bg-welcome.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+body .welcome .img-container {
+  width: 60%;
+  position: relative;
+  left: 35%;
+}
+body .welcome .img-container img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
