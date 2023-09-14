@@ -1,11 +1,12 @@
-body .header__nav .nav__phone a, body .header__nav ul a {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-variant: small-caps;
+@font-face {
+  font-family: "Architectural";
+  src: url(../assets/fonts/Architectural.ttf);
 }
-
 body {
   font-size: 24px;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 body .header {
   background-color: #9c1911;
@@ -25,6 +26,7 @@ body .header__nav ul {
 body .header__nav ul a {
   color: rgb(241, 241, 241);
   text-decoration: none;
+  font-variant: small-caps;
   font-size: 1.5rem;
 }
 body .header__nav .nav__phone {
@@ -36,12 +38,13 @@ body .header__nav .nav__phone object {
 body .header__nav .nav__phone a {
   color: rgb(241, 241, 241);
   text-decoration: none;
+  font-variant: small-caps;
   font-size: 1.1rem;
 }
 body .welcome {
   background-image: url(../assets/images/bg-welcome.jpg);
   background-size: cover;
-  height: 90vh;
+  min-height: 90vh;
 }
 body .welcome .img-container {
   width: 60%;
@@ -50,4 +53,45 @@ body .welcome .img-container {
 }
 body .welcome .img-container img {
   width: 100%;
+}
+body .welcome__slogan {
+  background-color: #ececec;
+  opacity: 80%;
+  position: absolute;
+  z-index: 2;
+  top: 105px;
+  left: 5%;
+  min-height: 25rem;
+  width: 49%;
+  padding: 4rem;
+}
+body .welcome__slogan h1 {
+  font-size: 6rem;
+  margin: 0;
+  font-family: "Architectural", Arial, Helvetica, sans-serif;
+}
+body .welcome__slogan p {
+  margin: 0;
+  font-weight: 300;
+  line-height: 60px;
+  font-size: 2rem;
+}
+body .welcome__slogan p:first-of-type {
+  margin-top: 50px;
+}
+body .welcome__button {
+  position: relative;
+  z-index: 3;
+  top: 6rem;
+  left: 25rem;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  margin: 2px;
+  background-color: white;
+  border: 1px solid #9c1911;
+  outline: 1px solid #9c1911;
+  outline-offset: 3px;
+  width: 50%;
+  font-family: "Architectural", Arial, Helvetica, sans-serif;
+  font-size: 6vw;
 }/*# sourceMappingURL=style.css.map */
