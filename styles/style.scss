@@ -9,100 +9,110 @@ $font_roboto: "Roboto", Arial, Helvetica, sans-serif;
 $font_architectural: "Architectural", Arial, Helvetica, sans-serif;
 
 @font-face {
-  font-family: "Architectural";
-  src: url(../assets/fonts/Architectural.ttf);
+	font-family: "Architectural";
+	src: url(../assets/fonts/Architectural.ttf);
 }
 
 body {
-  font-size: 24px;
-  box-sizing: border-box;
-  font-family: $font_roboto;
-  font-weight: 400;
-  .header {
-    background-color: $color_red;
-    &__nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        width: 50vw;
-        a {
-          color: $color_white;
-          text-decoration: none;
-          font-variant: small-caps;
-          font-size: 1.5rem;
-        }
-      }
-      .nav__phone {
-        margin-right: 2vw;
-        object {
-          width: 1rem;
-        }
-        a {
-          color: $color_white;
-          text-decoration: none;
-          font-variant: small-caps;
-          font-size: 1.1rem;
-        }
-      }
-    }
-  }
-  .welcome {
-    background-image: url(../assets/images/bg-welcome.jpg);
-    background-size: cover;
-    min-height: 90vh;
-    .img-container {
-      width: 60%;
-      position: relative;
-      left: 35%;
-      img {
-        width: 100%;
-      }
-    }
-    &__slogan {
-      background-color: $color_dark_white;
-      opacity: 80%;
-      position: absolute;
-      z-index: 2;
-      top: 105px;
-      left: 5%;
-      min-height: 25rem;
-      width: 49%;
-      padding: 4rem;
-      h1 {
-        font-size: 6rem;
-        margin: 0;
-        font-family: $font_architectural;
-      }
-      p {
-        margin: 0;
-        font-weight: 300;
-        line-height: 60px;
-        font-size: 2rem;
-      }
-      p:first-of-type {
-        margin-top: 50px;
-      }
-    }
-    &__button {
-      position: relative;
-      z-index: 3;
-      top: 6rem;
-      left: 25rem;
-      letter-spacing: 2px;
-      padding-top: 10px;
-      margin: 2px;
-      background-color: white;
-      border: 1px solid $color_red;
-      outline: 1px solid $color_red;
-      outline-offset: 3px;
-      width: 50%;
-      font-family: $font_architectural;
-      font-size: 6vw;
-    }
-  }
+	font-size: 24px;
+	box-sizing: border-box;
+	font-family: $font_roboto;
+	font-weight: 400;
+	.header {
+		background-color: $color_red;
+		&__nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			ul {
+				list-style-type: none;
+				display: flex;
+				justify-content: space-between;
+				gap: 10px;
+				width: 50vw;
+				a {
+					color: $color_white;
+					text-decoration: none;
+					font-variant: small-caps;
+					font-size: 1.5rem;
+				}
+			}
+			.nav__phone {
+				margin-right: 2vw;
+				object {
+					width: 1rem;
+				}
+				a {
+					color: $color_white;
+					text-decoration: none;
+					font-variant: small-caps;
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+	.welcome {
+		background-image: url(../assets/images/bg-welcome.jpg);
+		background-size: cover;
+		min-height: 92vh;
+		.img-container {
+			width: 60%;
+			position: absolute;
+			left: 35%;
+			img {
+				width: 100%;
+			}
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			.welcome__slogan {
+				background-color: $color_dark_white;
+				opacity: 85%;
+				position: relative;
+				z-index: 2;
+				top: 105px;
+				left: 5%;
+				min-height: 35rem;
+				width: 49%;
+				padding: 4rem 4rem 2.5rem 4rem;
+				h1 {
+					font-size: 6rem;
+					margin: 0;
+					font-family: $font_architectural;
+				}
+				p {
+					margin: 0;
+					font-weight: 300;
+					line-height: 60px;
+					font-size: 2rem;
+				}
+				p:first-of-type {
+					margin-top: 50px;
+				}
+			}
+			.welcome__button_container {
+				display: flex;
+				justify-content: center;
+				margin-top: 40px;
+				position: relative;
+				z-index: 3;
+				.welcome__button {
+					letter-spacing: 2px;
+					padding-top: 10px;
+					margin: 2px;
+					background-color: white;
+					border: 1px solid $color_red;
+					outline: 1px solid $color_red;
+					outline-offset: 3px;
+					width: 30%;
+					font-family: $font_architectural;
+					font-size: 6vw;
+					&:hover {
+						outline-offset: 7px;
+					}
+				}
+			}
+		}
+	}
 }

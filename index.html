@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Андрей Косоурихин</title>
-    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <ul>
-          <li><a href="#">обо mне</a></li>
-          <li><a href="#">услуги</a></li>
-          <li><a href="#">отзывы</a></li>
-          <li><a href="#">цены</a></li>
-          <li><a href="#">контакты</a></li>
-        </ul>
-        <section class="nav__phone">
-          <object
-            data="./assets/images/phone.svg"
-            type="image/svg+xml"
-          ></object>
-          <a href="tel://+74951339830">+7 495 133 98 30</a>
-        </section>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="welcome">
-        <div class="img-container">
-          <img
-            src="./assets/images/welcome-img.jpg"
-            alt="Фото квартиры"
-            class="welcome__img"
-          />
-        </div>
-        <section class="welcome__slogan">
-          <h1>быстро продать квартиру</h1>
-          <p>В Москве.</p>
-          <p>По лучшей цене.</p>
-          <p>С ипотекой, долгами, обремениями.</p>
-          <button type="button" class="welcome__button">хочу узнать!</button>
-        </section>
-      </section>
-    </main>
-    <script src="./index.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Андрей Косоурихин</title>
+		<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./styles/normalize.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__nav">
+				<ul>
+					<li><a href="#">обо mне</a></li>
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">отзывы</a></li>
+					<li><a href="#">цены</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+				<section class="nav__phone">
+					<object
+						data="./assets/images/phone.svg"
+						type="image/svg+xml"
+					></object>
+					<a href="tel://+74951339830">+7 495 133 98 30</a>
+				</section>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="welcome">
+				<div class="img-container">
+					<img
+						src="./assets/images/welcome-img.jpg"
+						alt="Фото квартиры"
+						class="welcome__img"
+					/>
+				</div>
+				<div class="container">
+					<section class="welcome__slogan">
+						<h1>быстро продать квартиру</h1>
+						<p>В Москве.</p>
+						<p>По лучшей цене.</p>
+						<p>С ипотекой, долгами, обремениями.</p>
+					</section>
+					<div class="welcome__button_container">
+						<button type="button" class="welcome__button">хочу узнать!</button>
+					</div>
+				</div>
+			</section>
+			<section class="about-me">
+				<div class="text">
+					<h1>обо мне</h1>
+					<p>
+						<span>Косоурихин Андрей Евгеньевич</span> - владелец московского
+						агенства ДМД-Недвижимость
+					</p>
+					<p>
+						Помогу продать, купить, обменять, сдать в аренду вашу недвижимость в
+						Москве под ключ.
+					</p>
+					<p>
+						Анализирую цели, которых вы хотите достичь в результате сделки, и
+						предлагаю вариант решения с наибольшей выгодой для вас.
+					</p>
+					<p>В 2009 году я создал агенство <span>ДМД-Недвижимость</span></p>
+				</div>
+				<div class="numbers">
+					<div class="numbers_item">
+						<span>25+</span>
+						<p>лет опыта</p>
+					</div>
+					<div class="numbers_item">
+						<span>700+</span>
+						<p>сделок закрыто успешно</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./index.js"></script>
+	</body>
 </html>

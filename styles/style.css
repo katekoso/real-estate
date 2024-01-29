@@ -44,46 +44,53 @@ body .header__nav .nav__phone a {
 body .welcome {
   background-image: url(../assets/images/bg-welcome.jpg);
   background-size: cover;
-  min-height: 90vh;
+  min-height: 92vh;
 }
 body .welcome .img-container {
   width: 60%;
-  position: relative;
+  position: absolute;
   left: 35%;
 }
 body .welcome .img-container img {
   width: 100%;
 }
-body .welcome__slogan {
+body .welcome .container {
+  display: flex;
+  flex-direction: column;
+}
+body .welcome .container .welcome__slogan {
   background-color: #ececec;
-  opacity: 80%;
-  position: absolute;
+  opacity: 85%;
+  position: relative;
   z-index: 2;
   top: 105px;
   left: 5%;
-  min-height: 25rem;
+  min-height: 35rem;
   width: 49%;
-  padding: 4rem;
+  padding: 4rem 4rem 2.5rem 4rem;
 }
-body .welcome__slogan h1 {
+body .welcome .container .welcome__slogan h1 {
   font-size: 6rem;
   margin: 0;
   font-family: "Architectural", Arial, Helvetica, sans-serif;
 }
-body .welcome__slogan p {
+body .welcome .container .welcome__slogan p {
   margin: 0;
   font-weight: 300;
   line-height: 60px;
   font-size: 2rem;
 }
-body .welcome__slogan p:first-of-type {
+body .welcome .container .welcome__slogan p:first-of-type {
   margin-top: 50px;
 }
-body .welcome__button {
+body .welcome .container .welcome__button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
   position: relative;
   z-index: 3;
-  top: 6rem;
-  left: 25rem;
+}
+body .welcome .container .welcome__button_container .welcome__button {
   letter-spacing: 2px;
   padding-top: 10px;
   margin: 2px;
@@ -91,7 +98,10 @@ body .welcome__button {
   border: 1px solid #9c1911;
   outline: 1px solid #9c1911;
   outline-offset: 3px;
-  width: 50%;
+  width: 30%;
   font-family: "Architectural", Arial, Helvetica, sans-serif;
   font-size: 6vw;
+}
+body .welcome .container .welcome__button_container .welcome__button:hover {
+  outline-offset: 7px;
 }/*# sourceMappingURL=style.css.map */
