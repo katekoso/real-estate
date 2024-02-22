@@ -20,6 +20,9 @@ body {
 	font-weight: 400;
 	.header {
 		background-color: $color_red;
+		position: fixed;
+		z-index: 3;
+		width: 100vw;
 		&__nav {
 			display: flex;
 			justify-content: space-between;
@@ -54,11 +57,13 @@ body {
 	.welcome {
 		background-image: url(../assets/images/bg-welcome.jpg);
 		background-size: cover;
-		min-height: 92vh;
+		min-height: 100vh;
 		.img-container {
 			width: 60%;
 			position: absolute;
 			left: 35%;
+			top: 8%;
+			z-index: 1;
 			img {
 				width: 100%;
 			}
@@ -85,7 +90,7 @@ body {
 					margin: 0;
 					font-weight: 300;
 					line-height: 60px;
-					font-size: 2rem;
+					font-size: 3rem;
 				}
 				p:first-of-type {
 					margin-top: 50px;
@@ -114,5 +119,10 @@ body {
 				}
 			}
 		}
+	}
+	.about-me {
+		background-image: url("../assets/images/about-me-bg.png");
+		background-size: cover;
+		min-height: 100vh;
 	}
 }

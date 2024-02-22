@@ -10,6 +10,9 @@ body {
 }
 body .header {
   background-color: #9c1911;
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
 }
 body .header__nav {
   display: flex;
@@ -44,12 +47,14 @@ body .header__nav .nav__phone a {
 body .welcome {
   background-image: url(../assets/images/bg-welcome.jpg);
   background-size: cover;
-  min-height: 92vh;
+  min-height: 100vh;
 }
 body .welcome .img-container {
   width: 60%;
   position: absolute;
   left: 35%;
+  top: 8%;
+  z-index: 1;
 }
 body .welcome .img-container img {
   width: 100%;
@@ -78,7 +83,7 @@ body .welcome .container .welcome__slogan p {
   margin: 0;
   font-weight: 300;
   line-height: 60px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 body .welcome .container .welcome__slogan p:first-of-type {
   margin-top: 50px;
@@ -104,4 +109,9 @@ body .welcome .container .welcome__button_container .welcome__button {
 }
 body .welcome .container .welcome__button_container .welcome__button:hover {
   outline-offset: 7px;
+}
+body .about-me {
+  background-image: url("../assets/images/about-me-bg.png");
+  background-size: cover;
+  min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */
